@@ -18,34 +18,36 @@ dependencies:
   - numpy=1.26.4
 
   # All other packages
-  - astropy=6.1.2
-  - bokeh=3.4.2
-  - black=24.4.2
+  - noaa-gfdl::catalogbuilder
+  - astropy=6.1.3
+  - beautifulsoup4=4.12.3
+  - bokeh=3.5.2
+  - black=24.8.0
   - bottleneck=1.4.0
   - cartopy=0.23.0
   - cmocean=4.0.3
   - cftime=1.6.4
-  - dask=2024.7.1
+  - dask=2024.9.0
   - dask_labextension=7.0.0
-  - dask-jobqueue=0.8.5
+  - dask-jobqueue=0.9.0
   - esmf=8.6.1
   - esmpy=8.6.1
   - geopy=2.4.1
   - gsw=3.6.19
   - gcm_filters=0.3.0
-  - gcsfs=2024.6.1
+  - gcsfs=2024.9.0
   - h5netcdf=1.3.0
   - holoviews=1.19.1
   - infomap=1.4.1
-  - intake=2.0.6
+  - intake=2.0.7
   - intake-xarray=0.7.0
   - ipykernel=6.29.5
   - ipython=8.26.0
   - ipympl=0.9.4
-  - jupyter=1.0.0
-  - jupyterlab=4.2.4
-  - lxml=5.2.2
-  - matplotlib=3.9.1
+  - jupyter=1.1.1
+  - jupyterlab=4.2.5
+  - lxml=5.3.0
+  - matplotlib=3.9.2
   - momlevel=0.0.11
   - mpich=4.2.2
   - nc-time-axis=1.4.1
@@ -53,52 +55,53 @@ dependencies:
   - networkx=3.3
   - numba=0.60.0
   - palettable=3.3.3
-  - pandas=2.2.2
-  - pandoc=3.2.1
-  - pip=24.0
-  - pylint=3.2.6
-  - pymysql=1.1.0
+  - pandas=2.2.3
+  - pandoc=3.4
+  - pip=24.2
+  - pylint=3.3.0
+  - pymysql=1.1.1
   - pyshp=2.3.1
-  - pytest=8.3.2
-  - pytorch=2.3.1
-  - pyyaml=6.0.1
+  - python-pptx=0.6.23
+  - pytest=8.3.3
+  - pytorch=2.4.0
+  - pyyaml=6.0.2
   - regionmask=0.12.1
-  - s3fs=2024.6.1
-  - scipy=1.14.0
-  - scikit-learn=1.5.1
+  - s3fs=2024.9.0
+  - scipy=1.14.1
+  - scikit-learn=1.5.2
   - seaborn=0.13.2
   - seawater=3.3.5
-  - shapely=2.0.5
+  - shapely=2.0.6
   - six=1.16.0
-  - sqlite=3.46.0
+  - sqlite=3.46.1
   - tabulate=0.9.0
   - tempest-extremes=2.2.2
-  - tensorflow=2.16.2
+  - tensorflow=2.17.0
   - utide=0.3.0
-  - xarray=2024.6.0
+  - xarray=2024.9.0
   - xgcm=0.8.2.dev15+g7492277
   - xhistogram=0.3.2
-  - xeofs=2.4.0
+  - xeofs=3.0.2
   - xesmf=0.8.7
-  - zarr=2.18.2
+  - zarr=2.18.3
 
   # ReadTheDocs Packages
   - jupyter-sphinx=0.5.3
-  - nbsphinx=0.9.4
+  - nbsphinx=0.9.5
   - sphinx=7.3.7
   - sphinx-book-theme=1.1.3
   - sphinx-rtd-theme=2.0.0
 
   # Dora Server Development
-  - cryptography=43.0.0
+  - cryptography=43.0.1
   - flask=3.0.3
   - flask-login=0.6.3
   - flask-mail=0.9.1
-  - gunicorn=22.0.0
+  - gunicorn=23.0.0
   - jinja2=3.1.4
   - oauthlib=3.2.2
   - python-dotenv=1.0.1
-  - werkzeug=3.0.3
+  - werkzeug=3.0.4
 
   - pip:
       - git+https://github.com/adcroft/MOM6_parameter_scanner

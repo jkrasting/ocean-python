@@ -17,8 +17,12 @@ dependencies:
   # NumPy Version
   - numpy
 
+  # GFDL Packages
+  - noaa-gfdl::catalogbuilder
+
   # All other packages
   - astropy
+  - beautifulsoup4
   - bokeh
   - black
   - bottleneck
@@ -59,6 +63,7 @@ dependencies:
   - pylint
   - pymysql
   - pyshp
+  - python-pptx
   - pytest
   - pytorch
   - pyyaml
