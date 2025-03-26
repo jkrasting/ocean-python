@@ -112,6 +112,7 @@ dependencies:
       - git+https://github.com/jkrasting/doralite
       - git+https://github.com/jkrasting/mplsettings
       - git+https://github.com/jkrasting/momgrid
+      - git+https://github.com/hdrake/gfdl_utils
       - cmip_basins
       - gfdlvitals
       - jupyterlab-code-formatter
