@@ -60,6 +60,7 @@ dependencies:
   - pandas
   - pandoc
   - pip
+  - py-opencv
   - pylint
   - pymysql
   - pyshp
@@ -110,6 +111,7 @@ dependencies:
       - git+https://github.com/raphaeldussin/sectionate
       - git+https://github.com/raphaeldussin/static_downsampler
       - git+https://github.com/jkrasting/doralite
+      - git+https://github.com/jkrasting/mar
       - git+https://github.com/jkrasting/mplsettings
       - git+https://github.com/jkrasting/momgrid
       - git+https://github.com/hdrake/gfdl_utils
