@@ -1,0 +1,132 @@
+# Conda Environment Descriptor
+
+# To install:
+#     mamba env create -f odiv_py312.yml
+# 
+# Or install in a specific location:
+#     mamba env create --prefix /nbhome/$USER/python/envs/py312_`date +"%Y%m%d"` -f odiv_py312.yml
+
+name: py312
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+
+  # NumPy Version
+  - numpy=2.2.6
+
+  # GFDL Packages
+  - noaa-gfdl::catalogbuilder
+
+  # All other packages
+  - astropy=7.1.0
+  - beautifulsoup4=4.13.4
+  - bokeh=3.7.3
+  - black=25.1.0
+  - bottleneck=1.5.0
+  - cartopy=0.24.0
+  - cmocean=4.0.3
+  - cftime=1.6.4
+  - dask=2025.5.1
+  - dask_labextension=7.0.0
+  - dask-jobqueue=0.9.0
+  - esmf=8.8.1
+  - esmpy=8.8.1
+  - geopy=2.4.1
+  - gsw=3.6.19
+  - gcm_filters=0.5.1
+  - gcsfs=2025.5.1
+  - h5netcdf=1.6.1
+  - holoviews=1.20.2
+  - infomap=1.4.1
+  - intake=2.0.8
+  - intake-xarray=2.0.0
+  - ipykernel=6.29.5
+  - ipython=9.2.0
+  - ipympl=0.9.7
+  - jupyter=1.1.1
+  - jupyterlab=4.4.3
+  - lxml=5.4.0
+  - matplotlib=3.10.3
+  - metpy=1.7.0
+  - momlevel=1.0.2
+  - mpich=4.3.0
+  - nc-time-axis=1.4.1
+  - netcdf4=1.7.2
+  - networkx=3.4.2
+  - numba=0.61.2
+  - palettable=3.3.3
+  - pandas=2.2.3
+  - pandoc=3.7.0.1
+  - pip=25.1.1
+  - py-opencv=4.11.0
+  - pylint=3.3.7
+  - pymysql=1.1.1
+  - pyshp=2.3.1
+  - python-pptx=1.0.2
+  - pytest=8.3.5
+  - pytorch=2.6.0
+  - pyyaml=6.0.2
+  - regionmask=0.13.0
+  - s3fs=2025.5.1
+  - scipy=1.15.2
+  - scikit-learn=1.6.1
+  - seaborn=0.13.2
+  - seawater=3.3.5
+  - shapely=2.1.1
+  - six=1.17.0
+  - sqlite=3.49.2
+  - tabulate=0.9.0
+  - tempest-extremes=2.3.1
+  - tensorflow=2.18.0
+  - utide=0.3.1
+  - windspharm=2.0.0
+  - xarray=2025.4.0
+  - xgcm=0.8.1
+  - xhistogram=0.3.2
+  - xeofs=3.0.4
+  - xesmf=0.8.10
+  - zarr=3.0.8
+
+  # ReadTheDocs Packages
+  - jupyter-sphinx=0.5.3
+  - nbsphinx=0.9.7
+  - sphinx=8.2.3
+  - sphinx-book-theme=1.1.4
+  - sphinx-rtd-theme=3.0.1
+
+  # Dora Server Development
+  - cryptography=45.0.3
+  - flask=3.1.1
+  - flask-login=0.6.3
+  - flask-mail=0.10.0
+  - gunicorn=23.0.0
+  - jinja2=3.1.6
+  - oauthlib=3.2.2
+  - python-dotenv=1.1.0
+  - werkzeug=3.1.3
+
+  - pip:
+      - git+https://github.com/adcroft/MOM6_parameter_scanner
+      - git+https://github.com/raphaeldussin/om4labs
+      - git+https://github.com/raphaeldussin/sectionate
+      - git+https://github.com/raphaeldussin/static_downsampler
+      - git+https://github.com/jkrasting/doralite
+      - git+https://github.com/jkrasting/mar
+      - git+https://github.com/jkrasting/mplsettings
+      - git+https://github.com/jkrasting/momgrid
+      - git+https://github.com/hdrake/gfdl_utils
+      - git+https://github.com/hdrake/regionate
+      - git+https://github.com/steidani/ConTrack
+      - cmip_basins
+      - gfdlvitals
+      - jupyterlab-code-formatter
+      - mdtf_test_data
+      - ruff
+      - xoverturning
+      - xwavelet
+      - xwmt
+      - xcompare
+      - omlabs

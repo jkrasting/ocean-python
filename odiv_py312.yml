@@ -1,0 +1,132 @@
+# Conda Environment Descriptor
+
+# To install:
+#     mamba env create -f odiv_py312.yml
+# 
+# Or install in a specific location:
+#     mamba env create --prefix /nbhome/$USER/python/envs/py312_`date +"%Y%m%d"` -f odiv_py312.yml
+
+name: py312
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+
+  # NumPy Version
+  - numpy
+
+  # GFDL Packages
+  - noaa-gfdl::catalogbuilder
+
+  # All other packages
+  - astropy
+  - beautifulsoup4
+  - bokeh
+  - black
+  - bottleneck
+  - cartopy
+  - cmocean
+  - cftime
+  - dask
+  - dask_labextension
+  - dask-jobqueue
+  - esmf
+  - esmpy
+  - geopy
+  - gsw
+  - gcm_filters
+  - gcsfs
+  - h5netcdf
+  - holoviews
+  - infomap
+  - intake
+  - intake-xarray
+  - ipykernel
+  - ipython
+  - ipympl
+  - jupyter
+  - jupyterlab
+  - lxml
+  - matplotlib
+  - metpy
+  - momlevel
+  - mpich
+  - nc-time-axis
+  - netcdf4
+  - networkx
+  - numba
+  - palettable
+  - pandas
+  - pandoc
+  - pip
+  - py-opencv
+  - pylint
+  - pymysql
+  - pyshp
+  - python-pptx
+  - pytest
+  - pytorch
+  - pyyaml
+  - regionmask
+  - s3fs
+  - scipy
+  - scikit-learn
+  - seaborn
+  - seawater
+  - shapely
+  - six
+  - sqlite
+  - tabulate
+  - tempest-extremes
+  - tensorflow
+  - utide
+  - windspharm
+  - xarray
+  - xgcm
+  - xhistogram
+  - xeofs
+  - xesmf
+  - zarr
+
+  # ReadTheDocs Packages
+  - jupyter-sphinx
+  - nbsphinx
+  - sphinx
+  - sphinx-book-theme
+  - sphinx-rtd-theme
+
+  # Dora Server Development
+  - cryptography
+  - flask
+  - flask-login
+  - flask-mail
+  - gunicorn
+  - jinja2
+  - oauthlib
+  - python-dotenv
+  - werkzeug
+
+  - pip:
+      - git+https://github.com/adcroft/MOM6_parameter_scanner
+      - git+https://github.com/raphaeldussin/om4labs
+      - git+https://github.com/raphaeldussin/sectionate
+      - git+https://github.com/raphaeldussin/static_downsampler
+      - git+https://github.com/jkrasting/doralite
+      - git+https://github.com/jkrasting/mar
+      - git+https://github.com/jkrasting/mplsettings
+      - git+https://github.com/jkrasting/momgrid
+      - git+https://github.com/hdrake/gfdl_utils
+      - git+https://github.com/hdrake/regionate
+      - git+https://github.com/steidani/ConTrack
+      - cmip_basins
+      - gfdlvitals
+      - jupyterlab-code-formatter
+      - mdtf_test_data
+      - ruff
+      - xoverturning
+      - xwavelet
+      - xwmt
+      - xcompare
+      - omlabs
