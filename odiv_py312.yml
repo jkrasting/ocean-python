@@ -1,10 +1,10 @@
 # Conda Environment Descriptor
 
 # To install:
-#     mamba env create -f odiv_py312.yml
+#     micromamba env create -f odiv_py312.yml
 # 
 # Or install in a specific location:
-#     mamba env create --prefix /nbhome/$USER/python/envs/py312_`date +"%Y%m%d"` -f odiv_py312.yml
+#     micromamba env create --prefix /nbhome/$USER/python/envs/py312_`date +"%Y%m%d"` -f odiv_py312.yml
 
 name: py312
 
@@ -27,21 +27,24 @@ dependencies:
   - black
   - bottleneck
   - cartopy
+  - cdo
   - cmocean
   - cftime
   - dask
   - dask_labextension
   - dask-jobqueue
+  - entrypoints
   - esmf
   - esmpy
   - geopy
+  - gh
   - gsw
   - gcm_filters
   - gcsfs
   - h5netcdf
   - holoviews
-  - infomap
   - intake
+  - intake-esm
   - intake-xarray
   - ipykernel
   - ipython
@@ -65,6 +68,7 @@ dependencies:
   - pylint
   - pymysql
   - pyshp
+  - python-cdo
   - python-pptx
   - pytest
   - pytorch
@@ -109,24 +113,33 @@ dependencies:
   - werkzeug
 
   - pip:
+      #- git+https://github.com/raphaeldussin/om4labs
+      #- git+https://github.com/raphaeldussin/sectionate
+      #- git+https://github.com/hdrake/regionate
+      - git+https://github.com/steidani/ConTrack
       - git+https://github.com/adcroft/MOM6_parameter_scanner
-      - git+https://github.com/raphaeldussin/om4labs
-      - git+https://github.com/raphaeldussin/sectionate
-      - git+https://github.com/raphaeldussin/static_downsampler
       - git+https://github.com/jkrasting/doralite
+      - git+https://github.com/hdrake/gfdl_utils
       - git+https://github.com/jkrasting/mar
       - git+https://github.com/jkrasting/mplsettings
-      - git+https://github.com/jkrasting/momgrid
-      - git+https://github.com/hdrake/gfdl_utils
-      - git+https://github.com/hdrake/regionate
-      - git+https://github.com/steidani/ConTrack
+      - git+https://github.com/raphaeldussin/static_downsampler
+      - git+https://github.com/NOAA-GFDL/xwmt
+      - build
       - cmip_basins
       - gfdlvitals
       - jupyterlab-code-formatter
+      - jupyterlab_templates
       - mdtf_test_data
+      - momgrid
+      - omlabs
       - ruff
+      - twine
       - xoverturning
       - xwavelet
-      - xwmt
       - xcompare
-      - omlabs
+
+
+# Post-install instructions
+# cp -v /nbhome/ogrp/python/activate_scripts/*  /nbhome/$USER/python/envs/py312_`date +"%Y%m%d"`/etc/conda/activate.d/.
+# ( micromamba activate py312_`date +"%Y%m%d"`&& cd /nbhome/$USER/python/pkgs/notebook-template && pip install -e . )
+# ( cd /nbhome/$USER/python/envs/py312_`date +"%Y%m%d"`/lib/python3.12/site-packages/jupyterlab_templates/templates && rm -fR jupyterlab_templates && ln -sf /nbhome/$USER/python/pkgs/notebook-template/src/esnb/templates esnb_templates )
