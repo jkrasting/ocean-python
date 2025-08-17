@@ -7,7 +7,7 @@ import os
 
 def get_conda_list() -> dict:
     """Get the list of currently installed packages and their versions."""
-    conda_list_output = subprocess.check_output(['micromamba', 'list']).decode('utf-8')
+    conda_list_output = subprocess.check_output(['mamba', 'list']).decode('utf-8')
     installed_packages = {}
     
     for line in conda_list_output.split('\n')[3:]:  # Skip the first three lines

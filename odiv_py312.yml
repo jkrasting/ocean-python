@@ -15,10 +15,7 @@ dependencies:
   - python=3.12
 
   # NumPy Version
-  - numpy
-
-  # GFDL Packages
-  - noaa-gfdl::catalogbuilder
+  - numpy=2.2.6
 
   # All other packages
   - astropy
@@ -36,9 +33,13 @@ dependencies:
   - entrypoints
   - esmf
   - esmpy
+  - ffmpeg
   - geopy
+  - geopandas
   - gh
+  - google-generativeai
   - gsw
+  - gsw-xarray
   - gcm_filters
   - gcsfs
   - h5netcdf
@@ -74,6 +75,7 @@ dependencies:
   - pytorch
   - pyyaml
   - regionmask
+  - ruff
   - s3fs
   - scipy
   - scikit-learn
@@ -124,8 +126,8 @@ dependencies:
       - git+https://github.com/jkrasting/mplsettings
       - git+https://github.com/raphaeldussin/static_downsampler
       - git+https://github.com/NOAA-GFDL/xwmt
-      - build
       - cmip_basins
+      - esnb
       - gfdlvitals
       - jupyterlab-code-formatter
       - jupyterlab_templates
@@ -133,7 +135,6 @@ dependencies:
       - momgrid
       - omlabs
       - ruff
-      - twine
       - xoverturning
       - xwavelet
       - xcompare
