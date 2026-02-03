@@ -1,0 +1,146 @@
+# Conda Environment Descriptor
+
+# To install:
+#     mamba env create -f odiv_py313.yml
+# 
+# Or install in a specific location:
+#     mamba env create --prefix /nbhome/$USER/python/envs/py313_`date +"%Y%m%d"` -f odiv_py313.yml
+
+name: py313
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.13
+
+  # NumPy Version
+  - numpy>=2.2.6
+
+  # All other packages
+  - astropy>=7.1.0
+  - beautifulsoup4>=4.13.4
+  - bokeh>=3.7.3
+  - black>=25.1.0
+  - bottleneck>=1.5.0
+  - cartopy
+  - cdo>=2.5.0
+  - cmocean>=4.0.3
+  - cftime>=1.6.4
+  - dask>=2025.7.0
+  - dask_labextension>=7.0.0
+  - dask-jobqueue>=0.9.0
+  - entrypoints>=0.4
+  - esmf
+  - esmpy
+  - ffmpeg>=7.1.1
+  - geopy>=2.4.1
+  - geopandas>=1.1.1
+  - gh>=2.76.2
+  - google-generativeai>=0.8.5
+  - gsw>=3.6.20
+  - gsw-xarray>=0.4.0
+  - gcm_filters>=0.5.1
+  - gcsfs>=2025.7.0
+  - h5netcdf>=1.6.4
+  - holoviews>=1.21.0
+  - intake>=2.0.8
+  - intake-esm>=2025.7.9
+  - intake-xarray>=2.0.0
+  - ipykernel>=6.30.1
+  - ipython>=9.4.0
+  - ipympl>=0.9.7
+  - jupyter>=1.1.1
+  - jupyterlab>=4.4.5
+  - lxml>=6.0.0
+  - matplotlib
+  - metpy>=1.7.0
+  - momlevel>=1.0.4
+  - mpich>=4.3.1
+  - nc-time-axis>=1.4.1
+  - netcdf4>=1.7.2
+  - networkx>=3.5
+  - numba>=0.61.2
+  - palettable>=3.3.3
+  - pandas>=2.3.1
+  - pandoc>=3.7.0.2
+  - pip>=25.2
+  - py-opencv>=4.11.0
+  - pylint>=3.3.8
+  - pymysql>=1.1.1
+  - pyshp>=3.0.0
+  - python-cdo>=1.6.0
+  - python-pptx>=1.0.2
+  - pytest>=8.4.1
+  - pytorch>=2.6.0
+  - pyyaml>=6.0.2
+  - regionmask>=0.12.1
+  - ruff>=0.12.8
+  - s3fs>=2025.7.0
+  - scipy>=1.16.1
+  - scikit-learn>=1.7.1
+  - seaborn>=0.13.2
+  - seawater>=3.3.5
+  - shapely>=2.1.1
+  - six>=1.17.0
+  - sqlite>=3.50.4
+  - tabulate>=0.9.0
+  - tempest-extremes>=2.3.1
+  #- tensorflow
+  - utide>=0.3.1
+  - windspharm>=2.0.0
+  - xarray>=2025.7.1
+  - xgcm>=0.8.1
+  - xhistogram>=0.3.2
+  - xeofs>=3.0.4
+  - xesmf>=0.8.10
+  - zarr>=3.1.1
+
+  # ReadTheDocs Packages
+  - jupyter-sphinx>=0.5.3
+  - nbsphinx>=0.9.7
+  - sphinx>=8.2.3
+  - sphinx-book-theme>=1.1.4
+  - sphinx-rtd-theme>=3.0.1
+
+  # Dora Server Development
+  - cryptography>=45.0.6
+  - flask>=3.1.1
+  - flask-login>=0.6.3
+  - flask-mail>=0.10.0
+  - gunicorn>=23.0.0
+  - jinja2>=3.1.6
+  - oauthlib>=3.3.1
+  - python-dotenv>=1.1.1
+  - werkzeug>=3.1.3
+
+  - pip:
+      #- git+https://github.com/raphaeldussin/om4labs
+      - git+https://github.com/steidani/ConTrack
+      - git+https://github.com/adcroft/MOM6_parameter_scanner
+      - git+https://github.com/jkrasting/doralite
+      - git+https://github.com/hdrake/gfdl_utils
+      - git+https://github.com/jkrasting/mar
+      - git+https://github.com/jkrasting/mplsettings
+      - git+https://github.com/raphaeldussin/static_downsampler
+      - cmip_basins
+      - xwmt
+      - sectionate
+      - regionate
+      - esnb
+      - gfdlvitals
+      - jupyterlab-code-formatter
+      - jupyterlab_templates
+      - mdtf_test_data
+      - momgrid
+      - omlabs
+      - ruff
+      - xoverturning
+      - xwavelet
+      - xcompare
+
+
+# Post-install instructions
+# cp -v /nbhome/ogrp/python/activate_scripts/*  /nbhome/$USER/python/envs/py312_`date +"%Y%m%d"`/etc/conda/activate.d/.
+# ( mamba activate py312_`date +"%Y%m%d"`&& cd /nbhome/$USER/python/pkgs/notebook-template && pip install -e . )
+# ( cd /nbhome/$USER/python/envs/py312_`date +"%Y%m%d"`/lib/python3.12/site-packages/jupyterlab_templates/templates && rm -fR jupyterlab_templates && ln -sf /nbhome/$USER/python/pkgs/notebook-template/src/esnb/templates esnb_templates )
